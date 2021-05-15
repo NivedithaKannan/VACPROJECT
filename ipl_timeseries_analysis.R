@@ -110,6 +110,7 @@ plot(ts2,main="Matches lost by MI year wise")
 fit <- auto.arima(ts2)
 forecasting <- forecast(fit, 5)
 print(forecasting)
+plot(forecasting)
 
 #Matches lost by RCB year wise
 rcb1 <- c(10,6,7,4,7,7,9,5,6,10,8,8,7)
